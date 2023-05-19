@@ -1,0 +1,42 @@
+body {background: lightgray;}
+
+header {
+    background: lightskyblue;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+}
+
+.subtitle {
+    font-size: small;
+    color: lightgray;
+}
+
+.card {background: white;}
+
+.figure {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-square {
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+}
+
+.result-luas {
+    visibility: hidden;
+}
