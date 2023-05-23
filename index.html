@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Matematik Persegi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Roboto:wght@100;900&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <span class="title">Katik</span>
-        <span class="subtitle">Kalkulator Matematik</span>        
-    </header>
+  <!-- Header section -->
+  <header>
+    <span class="title">Katik</span>
+    <span class="subtitle">Kalkulator Matematik</span>
+  </header>
 
-    <main>
+  <!-- Main content section -->
+  <main>
+    <!-- Luas Persegi section -->
+    <section class="centered-section">
+      <h2>Luas Persegi</h2>
+      <form id="calculator-form">
         <div class="card">
-            <div class="figure">
-                <div class="example-square"></div>
-            </div>
-            <div class="formula-description">
-                <p>Rumus Luas Persegi yaitu</p>
-                <p>L = S x S</p>
-                <p>Di mana:</p>
-                <p>L = Luas</p>
-                <p>S = Sisi</p>
-            </div>
-            <div>
-                <form>
-                    <h3>Hitung Luas Persegi</h3>
-                    <input id="sisi-luas" name="sisi-luas" required>
-
-                    <p class="result-luas" id="rumus-luas">L = S x S</p>
-                    <p class="result-luas" id="perhitungan-luas"></p>
-                    <p class="result-luas"><span id="output-luas">L = </span></p>
-                    
-                    <button name="hitung-luas" onclick="hitungLuas()">Hitung</button>
-                    <button name="reset-luas">Reset</button>
-                </form>
-            </div>            
+          <div class="figure">
+            <div class="example-square"><img src="assets/example-square.jpeg" alt="" width="100"></div>
+          </div>
+          <div class="formula-description">
+            <p>Rumus Luas Persegi yaitu</p>
+            <p>L = S x S</p>
+            <p>Di mana:</p>
+            <p>L = Luas</p>
+            <p>S = Sisi</p>
+          </div>
         </div>
-    </main>
+        <div class="form-group">
+          <label for="sisi-luas">Hitung Luas Persegi</label>
+          <input type="number" id="sisi-luas" name="sisi-luas" required>
+        </div>
+        <button type="submit" id="hitung-luas">Hitung</button>
+        <p id="output-luas"></p>
+      </form>
+    </section>
 
-    <footer>
+    <!-- Keliling Persegi section -->
+    <section class="centered-section">
+      <h2>Keliling Persegi</h2>
+      <form id="perimeter-form">
+        <div class="card">
+          <div class="figure">
+            <div class="example-square"><img src="assets/example-square.jpeg" alt="" width="100"></div>
+          </div>
+          <div class="formula-description">
+            <p>Rumus Keliling Persegi yaitu</p>
+            <p>K = 4 x S</p>
+            <p>Di mana:</p>
+            <p>K = Keliling</p>
+            <p>S = Sisi</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sisi-keliling">Hitung Keliling Persegi</label>
+          <input type="number" id="sisi-keliling" name="sisi-keliling" required>
+        </div>
+        <button type="submit" id="hitung-keliling">Hitung</button>
+        <p id="output-keliling"></p>
+      </form>
+    </section>
+  </main>
 
-    </footer>
-
-    <script src="js/script.js"></script>
+  <!-- Footer section -->
+  <footer>
+    <button id="reset-button">Reset</button>
+  </footer>
 </body>
+
 </html>
